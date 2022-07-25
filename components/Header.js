@@ -6,7 +6,7 @@ export default function Header({ name }) {
     <header className="pt-20 pb-12">
       <div className="w-12 h-12 rounded-full block mx-auto mb-4 bg-gradient-conic from-gradient-3 to-gradient-4" />
         <Image
-        src="https://github.com/AbdulelahTech/Almsbaha_Alragameah_website/blob/main/Logo.jpg"
+        src={require('https://github.com/AbdulelahTech/Almsbaha_Alragameah_website/blob/main/Logo.jpg').default}
         alt="Logo Image"
         width={250}
         height={250}
