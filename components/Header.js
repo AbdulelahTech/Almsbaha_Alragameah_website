@@ -7,8 +7,7 @@ export default function Header({ name }) {
     <header className="pt-20 pb-12">
        <Link href="/">
       <Image
-        className="center"
-        position="center"
+        className="avatar"
         src={Logo}
         alt="Logo Image"
         width={100} 
