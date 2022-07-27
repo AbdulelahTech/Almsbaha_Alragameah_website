@@ -7,7 +7,7 @@ export default function Header({ name }) {
     <header className="pt-20 pb-12">
        <Link href="/">
       <Image
-        className="w-12 h-12 rounded-full block mx-auto mb-4"
+        className="center"
         src={Logo}
         alt="Logo Image"
         width={100} 
@@ -16,7 +16,7 @@ export default function Header({ name }) {
         placeholder="blur" // Optional blur-up while loading
       />
       </Link>
-      <div clasName="w-12 h-12" />
+      <div clasName="w-12 h-50" />
         <p className="text-2xl dark:text-white text-center">
           <Link href="/">
             <a>{name}</a>
