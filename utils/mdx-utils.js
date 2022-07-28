@@ -14,11 +14,7 @@ export const postFilePaths = fs
   .filter((path) => /\.mdx?$/.test(path));
 
 export const sortPostsByDate = (posts) => {
-  return posts.sort((a, b) => {
-    const aDate = new Date(a.data.date);
-    const bDate = new Date(b.data.date);
-    return bDate - aDate;
-  });
+  return posts.sort((a, b) => a.data.title.localeCompare(b.data.title));
 };
 
 export const getPosts = () => {
